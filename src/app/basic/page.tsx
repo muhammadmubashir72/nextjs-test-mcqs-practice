@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-
 import { nextJsQuestions } from "./basicQuestion";
 
 export default function NextJsQuiz() {
