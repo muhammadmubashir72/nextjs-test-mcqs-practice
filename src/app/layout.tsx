@@ -27,7 +27,33 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="min-h-screen bg-gray-100 text-gray-900 flex flex-col">
+          {/* Header Section */}
+          <header className="bg-blue-600 text-white py-4 shadow-lg">
+            <div className="container mx-auto flex flex-wrap justify-between items-center px-4">
+              <h1 className="text-lg sm:text-xl md:text-2xl font-bold">
+                Next.js Practice Question
+              </h1>
+              <p className="text-sm sm:text-base md:text-lg italic">
+                Created by Mubashir Saeedi
+              </p>
+            </div>
+          </header>
+
+          {/* Main Content */}
+          <main className="flex-grow container mx-auto px-4 py-6">
+            {children}
+          </main>
+
+          {/* Footer Section */}
+          <footer className="bg-blue-600 text-white py-4 shadow-lg">
+            <div className="container mx-auto text-center">
+              <p className="text-sm sm:text-base">
+                © 2025 Mubashir Saeedi. All Rights Reserved.
+              </p>
+            </div>
+          </footer>
+        </div>
       </body>
     </html>
   );
