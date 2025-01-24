@@ -701,10 +701,6 @@ export const nextJsQuestions = [
     ],
     answer: "By modifying the `next.config.js` file",
   },
-];
-
-
-const basicNextJsQuestions = [
   {
     question: "What is Next.js?",
     options: [
